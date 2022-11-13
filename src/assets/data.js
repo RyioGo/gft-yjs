@@ -1,0 +1,557 @@
+export default {
+  message: "成功！",
+  code: 200,
+  data: {
+    tabs: [
+      "全部",
+      "市场监管部门",
+      "人力资源与社会保障部门",
+      "自然资源部门",
+      "卫生健康部门",
+      "民政部门",
+      "残联",
+      "退役军人事务部门",
+    ],
+    e: [
+      {
+        mainOrg: "市场监管部门",
+        id: 1,
+        declareUrl: "https://wfw.amr.jiangxi.gov.cn/gftaces//index.html",
+        flowName: "企业开办",
+        img: require("@/assets/bgi/qykb.jpg"),
+        bsmx: require("@/assets/work/qykb.png"),
+        /*         children: [
+          {
+            icon: require("@/assets/icons/qysldj.png"),
+            name: "内资公司设立登记",
+            org: "市场监管部门",
+            code: "360500-000201026000-XK-277-03",
+          },
+          {
+            icon: require("@/assets/icons/qysldj.png"),
+            name: "内资公司分设立登记",
+            org: "市场监管部门",
+            code: "360500-000201026000-XK-269-05",
+          },
+          {
+            icon: require("@/assets/icons/gzkzba.png"),
+            name: "公章刻制备案",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/fply.png"),
+            name: "发票领用",
+            code: "360500-000201046000-GG-106-01",
+            org: "税务部门",
+          },
+          {
+            icon: require("@/assets/icons/qyshbxdj.png"),
+            name: "企业社会保险登记",
+            code: "360500-000201024000-GG-133-02",
+            org: "人力资源与社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/zfgjjdwdjkh.png"),
+            name: "住房公积金单位登记开户",
+            code: "360500-000602052000-GG-007-01",
+            org: "公积金部门",
+          },
+        ], */
+      },
+      /*       {
+        mainOrg: "市场监管部门",
+        id: 2,
+        flowName: "企业准营",
+        img: require("@/assets/bgi/qyzy.png"),
+        bsmx: require("@/assets/work/qyzy.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/spjyxk.png"),
+            name: "食品经营许可",
+            code: "360500-000201026000-XK-296-01-01",
+            org: "市场监管部门",
+          },
+          {
+            icon: require("@/assets/icons/aqjc.png"),
+            name: "公众聚集场所投入使用、营业前消防安全检查",
+            code: "360500-000602036000-XK-009-01",
+            org: "消防部门",
+          },
+        ],
+      },
+      {
+        mainOrg: "人力资源与社会保障部门",
+        id: 3,
+        flowName: "员工录用",
+        img: require("@/assets/bgi/ygly.png"),
+        bsmx: require("@/assets/work/ygly.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/jydj.png"),
+            name: "就业登记",
+            code: "code",
+            org: "人力资源与社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/zgcbdj.png"),
+            name: "职工参保登记（社会保险）",
+            code: "360500-000201024000-GG-068-01-02",
+            org: "人力资源与社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/sbksl.png"),
+            name: "社会保障卡申领",
+            code: "360500-000201024000-GG-188-01",
+            org: "人力资源与社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/dajs.png"),
+            name: "档案的接收和转递（流动人员）",
+            code: "code",
+            org: "人力资源与社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/zgcbdjjbylx.png"),
+            name: "职工参保登记（基本医疗保险）",
+            code: "360500-000459046000-GG-020-01",
+            org: "人力资源与社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/grzfgjj.png"),
+            name: "个人住房公积金账户设立",
+            code: "360500-000602052000-GG-008-01",
+            org: "公积金部门",
+          },
+        ],
+      },
+      {
+        mainOrg: "自然资源部门",
+        id: 4,
+        flowName: "涉企不动产登记",
+        img: require("@/assets/bgi/bdcdj.png"),
+        bsmx: require("@/assets/work/sqbdcdj.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/bdcdj.png"),
+            name: "不动产登记",
+            code: "360500-000201013000-QR-012-04-06",
+            org: "不动产登记中心",
+          },
+          {
+            icon: require("@/assets/icons/fdcjysfsb.png"),
+            name: "房地产交易税费申报",
+            code: "code",
+            org: "税务部门",
+          },
+        ],
+      }, */
+      {
+        mainOrg: "市场监管部门",
+        id: 5,
+        flowName: "企业简易注销",
+        declareUrl: "https://wfw.amr.jiangxi.gov.cn/gftaces//index.html",
+        img: require("@/assets/bgi/qyzx.png"),
+        bsmx: require("@/assets/work/qyjyzx.png"),
+        /*         children: [
+          {
+            icon: require("@/assets/icons/swzx.png"),
+            name: "税务注销",
+            code: "360500-000201046000-GG-122-01",
+            org: "税务部门",
+          },
+          {
+            icon: require("@/assets/icons/qyzxdj.png"),
+            name: "内资分公司注销登记",
+            code: "360500-000201026000-XK-269-06",
+            org: "市场监管部门",
+          },
+          {
+            icon: require("@/assets/icons/qyzxdj.png"),
+            name: "内资公司注销登记",
+            code: "360500-000201026000-XK-277-04",
+            org: "市场监管部门",
+          },
+        ], */
+      },
+    ],
+    p: [
+      {
+        mainOrg: "卫生健康部门",
+        id: 6,
+        flowName: "新生儿出生",
+        declareUrl:
+          "https://ganfutong.jiangxi.gov.cn/jmopenpub/jmopen_files/unzip/cd401e9a2e624a6ca5cee8ffec6cbf3d/gfthyhylb/index.html",
+        img: require("@/assets/bgi/xsecs.png"),
+        bsmx: require("@/assets/work/xsecs.png"),
+        /*         children: [
+          {
+            icon: require("@/assets/icons/cszmqf.png"),
+            name: "出生医学证明签发",
+            code: "code",
+            org: "卫生健康部门",
+          },
+          {
+            icon: require("@/assets/icons/yfjzbl.png"),
+            name: "预防接种证办理",
+            code: "code",
+            org: "疾控部门，卫生健康部门按职责分工落实",
+          },
+          {
+            icon: require("@/assets/icons/hkdj.png"),
+            name: "户口登记",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/cxjmcb.png"),
+            name: "单位参保登记(基本医疗保险)",
+            code: "360500-000459046000-GG-005-01-01",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/cxjmcb.png"),
+            name: "人员参保登记(基本医疗保险)",
+            code: "360500-000459046000-GG-004-03",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/cxjmcb.png"),
+            name: "职工参保登记(基本医疗保险)",
+            code: "360500-000459046000-GG-020-01",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/sbksl.png"),
+            name: "社会保障卡申领",
+            code: "360500-000201024000-GG-188-01",
+            org: "人力资源社会保障部门",
+          },
+        ], */
+      },
+      /*       {
+        mainOrg: "人力资源社会保障部门",
+        id: 7,
+        flowName: "灵活就业",
+        img: require("@/assets/bgi/lhjy.png"),
+        bsmx: require("@/assets/work/lhjy.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/jydj.png"),
+            name: "就业登记",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/dajs.png"),
+            name: "档案的接收和转递(流动人员）",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/shbxdj.png"),
+            name: "机关事业单位参加社会保险登记",
+            code: "360500-000201024000-GG-133-03",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/shbxdj.png"),
+            name: "企业职工参加社会保险登记",
+            code: "360500-000201024000-GG-153-01",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/shbxdj.png"),
+            name: "企业参加社会保险登记",
+            code: "360500-000201024000-GG-133-02",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/shbxdj.png"),
+            name: "机关事业单位职工参加社会保险登记",
+            code: "360500-000201024000-GG-153-02",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/jbylbx.png"),
+            name: "基本医疗保险参保和变更登记",
+            code: "code",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/lhjy.png"),
+            name: "灵活就业人员社会保险费申报",
+            code: "360500-000201046000-GG-056-02",
+            org: "税务部门",
+          },
+        ],
+      }, */
+      {
+        mainOrg: "民政部门",
+        id: 8,
+        flowName: "公民婚育",
+        declareUrl:
+          "https://ganfutong.jiangxi.gov.cn/jmopenpub/jmopen_files/unzip/cd401e9a2e624a6ca5cee8ffec6cbf3d/gfthyhylb/index.html",
+        img: require("@/assets/bgi/gmhy.png"),
+        bsmx: require("@/assets/work/gmhy.png"),
+        /*         children: [
+          {
+            icon: require("@/assets/icons/ndjmhydj.png"),
+            name: "内地居民婚姻登记",
+            code: "code",
+            org: "民政部门",
+          },
+          {
+            icon: require("@/assets/icons/hkdjxmbg.png"),
+            name: "户口登记项目变更",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/hkqy.png"),
+            name: "户口迁移",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/sydj.png"),
+            name: "生育登记",
+            code: "code",
+            org: "卫生健康部门",
+          },
+        ], */
+      },
+      /*       {
+        mainOrg: "残联",
+        id: 9,
+        flowName: "扶残助困",
+        img: require("@/assets/bgi/fczk.png"),
+        bsmx: require("@/assets/work/fczg.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/cjrzbl.png"),
+            name: "残疾人证办理",
+            code: "code",
+            org: "残联",
+          },
+          {
+            icon: require("@/assets/icons/kncjr.png"),
+            name: "困难残疾人生活补贴和重度残疾人护理补贴资格认定",
+            code: "code",
+            org: "民政部门",
+          },
+          {
+            icon: require("@/assets/icons/dbtk.png"),
+            name: "低保、特困等困难群众医疗妆助",
+            code: "code",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/cxjm.png"),
+            name: "城乡居民基本养老保险补助",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+        ],
+      },
+      {
+        mainOrg: "退役军人事务部门",
+        id: 10,
+        flowName: "军人退役",
+        img: require("@/assets/bgi/jrty.png"),
+        bsmx: require("@/assets/work/jrty.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/tybd.png"),
+            name: "退役报到",
+            code: "code",
+            org: "退役军人事务部门",
+          },
+          {
+            icon: require("@/assets/icons/hkdj.png"),
+            name: "户口登记(退役军人恢复户口)",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/hfjmsfz.png"),
+            name: "核发居民身份证",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/ybydj.png"),
+            name: "预备役登记",
+            code: "code",
+            org: "人民武装部门",
+          },
+          {
+            icon: require("@/assets/icons/shbxdj.png"),
+            name: "社会保险登记",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/jbylbxgxzyjs.png"),
+            name: "军地养老保险关系转移接续",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/shbxdj.png"),
+            name: "基本医疗保险参保和变更登记",
+            code: "code",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/gxzy.png"),
+            name: "基本医疗保险关系转移接续",
+            code: "code",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/bzj.png"),
+            name: "退役士兵自主就业一次性经济补助金的给付",
+            code: "code",
+            org: "退役军人事务部门",
+          },
+        ],
+      },
+      {
+        mainOrg: "自然资源部门",
+        id: 11,
+        flowName: "不动产转移登记及水电气联动过户",
+        img: require("@/assets/bgi/bdczydjjsdqldgh.png"),
+        bsmx: require("@/assets/work/bdczydjjsdqldgh.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/fdcjysfsb.png"),
+            name: "房地产交易税费申报",
+            code: "code",
+            org: "税务部门",
+          },
+          {
+            icon: require("@/assets/icons/bdctydj.png"),
+            name: "不动产统一登记",
+            code: "code",
+            org: "自然资源部门",
+          },
+          {
+            icon: require("@/assets/icons/dbgh.png"),
+            name: "电表过户",
+            code: "code",
+            org: "供电公司",
+          },
+          {
+            icon: require("@/assets/icons/sbgh.png"),
+            name: "水表过户",
+            code: "code",
+            org: "水务集团",
+          },
+          {
+            icon: require("@/assets/icons/trqgh.png"),
+            name: "天然气表过户",
+            code: "code",
+            org: "燃气公司",
+          },
+        ],
+      },
+      {
+        mainOrg: "人力资源社会保障部门",
+        id: 12,
+        flowName: "企业职工退休",
+        img: require("@/assets/bgi/qyzgtx.png"),
+        bsmx: require("@/assets/work/qyzgtx.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/zctxsq.png"),
+            name: "职工正常退休（职）申请",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/tqtxsq.png"),
+            name: "职工提前退休（退职）申请",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/zgcbdj.png"),
+            name: "职工参保登记（基本医疗保险）",
+            code: "code",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/zfgjjtq.png"),
+            name: "住房公积金提取（离休、退休）",
+            code: "code",
+            org: "公积金部门",
+          },
+        ],
+      },
+      {
+        mainOrg: "民政部门",
+        id: 13,
+        flowName: "公民身后",
+        img: require("@/assets/bgi/gmsh.png"),
+        bsmx: require("@/assets/work/gmsh.png"),
+        children: [
+          {
+            icon: require("@/assets/icons/zcswzm.png"),
+            name: "出具死亡证明（正常死亡）",
+            code: "code",
+            org: "卫生健康部门",
+          },
+          {
+            icon: require("@/assets/icons/fzcswdj.png"),
+            name: "出具死亡证明（非正常死亡）",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/cjhhzm.png"),
+            name: "出具火化证明",
+            code: "code",
+            org: "民政部门",
+          },
+          {
+            icon: require("@/assets/icons/cbgrzhyctq.png"),
+            name: "参保人员个人账户一次性支取（基本医疗保险）",
+            code: "code",
+            org: "医保部门",
+          },
+          {
+            icon: require("@/assets/icons/grzhycxdysq.png"),
+            name: "个人账户一次性待遇申领（养老保险）",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/yzdysq.png"),
+            name: "遗属待遇申领",
+            code: "code",
+            org: "人力资源社会保障部门",
+          },
+          {
+            icon: require("@/assets/icons/hkzx.png"),
+            name: "死亡、宣告死亡办理户口注销",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/zxjsz.png"),
+            name: "注销驾驶证(基本医疗保险)",
+            code: "code",
+            org: "公安部门",
+          },
+          {
+            icon: require("@/assets/icons/zfgjjtq.png"),
+            name: "住房公积金提取（死亡）",
+            code: "code",
+            org: "公积金部门",
+          },
+        ],
+      }, */
+    ],
+  },
+};
